@@ -1,0 +1,18 @@
+EX QUERY CON GROUP BY
+
+
+SELECT COUNT(`name`), YEAR(`enrolment_date`)
+FROM `students`
+GROUP BY `enrolment_date`;
+
+SELECT COUNT(`name`), `office_address`
+FROM `teachers`
+GROUP BY `office_address`;
+
+SELECT AVG(`vote`)
+FROM `exam_student`
+GROUP BY `exam_id`;
+
+SELECT COUNT(`name`), `degree_id`
+FROM `courses`
+GROUP BY `degree_id`;
