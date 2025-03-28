@@ -21,9 +21,9 @@ WHERE `teachers`.`id` = 44;
 SELECT `students`.`name` AS `Student_Name`, `students`.`surname` AS `Student_Surname`, `degrees`.`name` AS `Degree_Name`
 FROM `students`
 INNER JOIN `degrees`
-ON `students`.`id` = `degrees`.`id`
+ON `students`.`degree_id` = `degrees`.`id`
 INNER JOIN `departments`
-ON `degrees`.`id` = `departments`.`id`
+ON `degrees`.`department_id` = `departments`.`id`
 ORDER BY `students`.`name` ASC;
 
 SELECT `students`.`name` AS `Student_Name`, `students`.`surname` AS `Student_Surname`, `degrees`.`name` AS `Degree_Name`
